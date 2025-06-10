@@ -1,0 +1,164 @@
+{% extends "site_design/base.html" %} {% load static %} {% block content %}
+{%block extra_css %}
+<style>
+  .bg-home {
+    position: relative;
+    --bg-site: url({{ conteudo.banner_imagem }});
+  }
+  .bg-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.9;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+      var(--bg-site);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+</style>
+{% endblock %}
+
+<div class="bg-home">
+  <nav class="header-content container">
+    <div class="header-icons" data-aos="fade-down">
+      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+    </div>
+    <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+      <img
+        data-aos="flip-up"
+        data-aos-delay="300"
+        data-aos-duration="1500"
+        src="{{ conteudo.logo_barbearia }}"
+        alt="Logo da barbearia"
+      />
+    </div>
+    <div data-aos="fade-down">
+      <a
+        class="header-button"
+        href="https://api.whatsapp.com/send/?phone=5561966666666&text=Agendar&type=phone_number&app_absent=0"
+        target="_blank"
+        >Agendar horário</a
+      >
+    </div>
+  </nav>
+  <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+    <h1>{{ conteudo.banner_titulo }}</h1>
+    <p>{{ conteudo.banner_subtitulo }}</p>
+    <a href="#" class="button-contact" target="_blank">
+      {{ conteudo.banner_texto_botao }}
+    </a>
+  </main>
+
+  <section class="about">
+    <div class="container about-content">
+      <div data-aos="zoom-in" data-aos-delay="100">
+        <img
+          src="{% static 'assets/imagens/images.svg' %}"
+          alt="Imagem sobre a barbearia"
+        />
+      </div>
+      <div
+        class="about-description"
+        data-aos="fade-out-left"
+        data-aos-delay="250"
+      >
+        <h2>Sobre</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          sapiente similique ipsam nisi repudiandae numquam reiciendis natus,
+          velit, nihil veritatis nesciunt veniam! Suscipit, cupiditate
+          perspiciatis optio consequuntur cumque assumenda molestias.
+        </p>
+        <p>
+          Horário de funcionamento: <strong>09:00</strong> ás
+          <strong>19:00</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="services-content container">
+      <h2>Serviços</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis neque
+        dolores ab ipsum voluptate quia cumque dolor tempore laborum pariatur.
+        Debitis voluptatem odit molestiae incidunt quis eos harum iste maxime!
+      </p>
+    </div>
+
+    <section class="haircuts">
+      <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+        <img src="{% static 'assets/imagens/corte1.png' %}" alt="" />
+        <div class="haircut-info">
+          <strong>Corte Normal</strong>
+          <button>R$ 45,00</button>
+        </div>
+      </div>
+      <div class="haircut" data-aos="fade-up" data-aos-delay="350">
+        <img src="{% static 'assets/imagens/corte2.png' %}" alt="" />
+        <div class="haircut-info">
+          <strong>Barba completa</strong>
+          <button>R$ 35,00</button>
+        </div>
+      </div>
+      <div class="haircut" data-aos="fade-up" data-aos-delay="450">
+        <img src="{% static 'assets/imagens/corte3.png' %}" alt="" />
+        <div class="haircut-info">
+          <strong>Corte e barba</strong>
+          <button>R$ 85,00</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <div class="services">
+    <h2>Venha conhecer</h2>
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.89881341154944!2d-48.055812821993165!3d-15.836559569216686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a32eb87e4d727%3A0x205e0757a9d8a915!2sBarbearia%20Executiva!5e0!3m2!1spt-BR!2sbr!4v1715820553207!5m2!1spt-BR!2sbr"
+    width="100%"
+    height="450"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+
+  <footer class="footer">
+    <div class="container-icons">
+      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+    </div>
+
+    <div class=" ">
+      <img src="{{ conteudo.logo_barbearia }}" alt="Logo da barbearia" />
+    </div>
+
+    <p>Copyright 2024 | Dev Barber - Todos direitos reservados</p>
+  </footer>
+
+  <a
+    data-aos="zoom-in-up"
+    data-aos-delay="400"
+    href="https://api.whatsapp.com/send/?phone=5561966666666&text=Agendar&type=phone_number&app_absent=0"
+    class="btn-whatsapp"
+    target="_blank"
+  >
+    <img
+      src="{% static 'assets/imagens/whatssapp.svg' %}"
+      alt="Botão whatssapp"
+    />
+    <span class="tooltip-text">Agende um horário</span>
+  </a>
+  <script>
+    AOS.init();
+  </script>
+  {% endblock %}
+</div>
