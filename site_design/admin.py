@@ -5,7 +5,8 @@ from .models import (
     Servico,
     InformacaoSite,
     ChaveConteudo,
-    ImagensSite
+    ImagensSite,
+    ProfissionalServico
 )
 
 @admin.register(Barbearia)
@@ -57,3 +58,10 @@ class ChaveConteudoAdmin(admin.ModelAdmin):
 class ImagensSiteAdmin(admin.ModelAdmin):
     list_display  = ("barbearia", "imagem","chave" ,"criado_em")
     list_filter   = ("barbearia","chave")
+
+
+@admin.register(ProfissionalServico)
+class ProfissionalServicoAdmin(admin.ModelAdmin):
+    list_display  = ("profissional", "servico", "duracao_min", "preco_especial")
+    list_filter   = ("profissional", "servico")
+    search_fields = ("profissional__nome", "servico__nome")

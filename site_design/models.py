@@ -33,6 +33,12 @@ class Profissional(models.Model):
     foto = models.ImageField(upload_to='profissionais/', blank=True, null=True)
     descricao = models.TextField(blank=True, null=True)
 
+    servicos = models.ManyToManyField(
+        "Servico",
+        through="ProfissionalServico",
+        related_name="profissionais",
+    )
+
 class Servico(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     barbearia = models.ForeignKey(Barbearia, on_delete=models.CASCADE, related_name="servicos")
@@ -40,6 +46,21 @@ class Servico(models.Model):
     descricao = models.TextField(blank=True, null=True)
     preco = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
     imagem = models.ImageField(upload_to='servicos/', blank=True, null=True)
+
+class ProfissionalServico(models.Model):
+    id= models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    profissional= models.ForeignKey(Profissional, on_delete=models.CASCADE)
+    servico= models.ForeignKey(Servico,on_delete=models.CASCADE)
+
+    duracao_min  = models.PositiveIntegerField(blank=True, null=True) 
+    preco_especial = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
+
+    class Meta:
+        unique_together = [("profissional", "servico")]
+        ordering = ["profissional", "servico"]
+
+    def __str__(self):
+        return f"{self.profissional.nome} – {self.servico.nome}"
 
 class PromocaoEvento(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
