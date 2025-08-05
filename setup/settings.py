@@ -4,6 +4,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv()
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'site_design.apps.SiteDesignConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -131,7 +133,7 @@ JAZZMIN_SETTINGS = {
     "site_title": "Painel do Admin",         
     "site_header": "Administração",          
     "site_brand": "Meu Painel",              
-    "welcome_sign": "Bem-vindo(a) ao IA Tools!",
+    "welcome_sign": "Bem-vindo(a) ao Barber Sites!",
     "copyright": "© 2025 Minha Empresa",
     
     "show_sidebar": True,
@@ -141,3 +143,14 @@ JAZZMIN_SETTINGS = {
     "order_with_respect_to": ["auth", "meuapp"],
 }
 
+# Conexao com banco
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': str(os.getenv('DB_NAME')),
+        'USER': str(os.getenv('DB_USER')),
+        'PASSWORD': str(os.getenv('DB_PASSWORD')),
+        'HOST': str(os.getenv('DB_URL')),
+        'PORT':os.getenv('DB_URL_PORT'),
+    }
+}

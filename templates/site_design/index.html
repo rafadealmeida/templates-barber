@@ -66,16 +66,13 @@
         data-aos="fade-out-left"
         data-aos-delay="250"
       >
-        <h2>Sobre</h2>
+        <h2>{{ conteudo.sobre_titulo }}</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          sapiente similique ipsam nisi repudiandae numquam reiciendis natus,
-          velit, nihil veritatis nesciunt veniam! Suscipit, cupiditate
-          perspiciatis optio consequuntur cumque assumenda molestias.
+          {{ conteudo.sobre_texto }}
         </p>
         <p>
-          Horário de funcionamento: <strong>09:00</strong> ás
-          <strong>19:00</strong>
+          Horário de funcionamento: <strong>{{ conteudo.sobre_horaInicio }}</strong> ás
+          <strong>{{ conteudo.sobre_horaFim }}</strong>
         </p>
       </div>
     </div>
