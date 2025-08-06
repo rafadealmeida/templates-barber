@@ -12,6 +12,7 @@ load_dotenv()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
+EXTERNAL_API_KEY =str(os.getenv('EXTERNAL_API_KEY'))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -32,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'site_design.apps.SiteDesignConfig',
     'rest_framework',
+    'integration_api',
 ]
 
 MIDDLEWARE = [
