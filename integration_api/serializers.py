@@ -1,13 +1,29 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group
 from rest_framework import serializers
+from rest_framework.validators import UniqueValidator
 # from team.models import Team
 
 User = get_user_model()
 
 class ExternalAdminUserSerializer(serializers.Serializer):
-    username = serializers.CharField()
-    email = serializers.EmailField()
+    
+    username = serializers.CharField(
+        validators=[
+            UniqueValidator(
+                queryset=User.objects.all(),
+                message="Este nome de usuário já está em uso."
+            )
+        ]
+    )
+    email = serializers.EmailField(
+        validators=[
+            UniqueValidator(
+                queryset=User.objects.all(),
+                message="Este e-mail já está em uso."
+            )
+        ]
+    )
     password = serializers.CharField(write_only=True)
     stripe_subscription_id = serializers.CharField(write_only=True)
     # team_id = serializers.IntegerField()

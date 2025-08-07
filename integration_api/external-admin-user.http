@@ -1,0 +1,11 @@
+### Criar usuário admin via API externa
+POST http://127.0.0.1:8000/external/admin-users/ HTTP/1.1
+X-API-KEY: chaveSuperSecreta123
+Content-Type: application/json
+
+{
+  "username": "novo_admin",
+  "email": "admin@exemplo.com",
+  "password": "SenhaForte!2025",
+  "stripe_subscription_id": "teste"
+}
