@@ -1,5 +1,7 @@
 {% extends "site_design/base.html" %} {% load static %} {% block content %}
 {%block extra_css %}
+{% load static l10n %}
+
 <style>
   .bg-home {
     position: relative;
@@ -80,15 +82,44 @@
 
   <section class="services">
     <div class="services-content container">
-      <h2>Serviços</h2>
+      <h2>{{ conteudo.servico_titulo }}</h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis neque
-        dolores ab ipsum voluptate quia cumque dolor tempore laborum pariatur.
-        Debitis voluptatem odit molestiae incidunt quis eos harum iste maxime!
+        {{ conteudo.servico_conteudo }}
       </p>
     </div>
 
-    <section class="haircuts">
+
+<section class="haircuts">
+  {% for servico in servicos %}
+    {# incrementa o delay em passos de 100ms: 250, 350, 450... #}
+    {% widthratio forloop.counter0 1 100 as step %}
+    <div class="haircut" data-aos="fade-up" data-aos-delay="{{ 250|add:step }}">
+      {% if servico.imagem %}
+        <img src="{{ servico.imagem.url }}" alt="{{ servico.nome }}" />
+      {% else %}
+        {# fallback se o serviço não tiver imagem #}
+        <img src="{% static 'assets/imagens/corte1.png' %}" alt="{{ servico.nome }}" />
+      {% endif %}
+
+      <div class="haircut-info">
+        <strong>{{ servico.nome }}</strong>
+
+        {% if servico.preco %}
+          {# Se o projeto estiver com localize pt-BR, vai sair como 45,00 #}
+          {% localize on %}
+            <button>R$ {{ servico.preco }}</button>
+          {% endlocalize %}
+        {% else %}
+          <button>Consultar</button>
+        {% endif %}
+      </div>
+    </div>
+  {% empty %}
+    <p>Nenhum serviço cadastrado ainda.</p>
+  {% endfor %}
+</section>
+
+    <!-- <section class="haircuts">
       <div class="haircut" data-aos="fade-up" data-aos-delay="250">
         <img src="{% static 'assets/imagens/corte1.png' %}" alt="" />
         <div class="haircut-info">
@@ -110,7 +141,7 @@
           <button>R$ 85,00</button>
         </div>
       </div>
-    </section>
+    </section> -->
   </section>
 
   <div class="services">

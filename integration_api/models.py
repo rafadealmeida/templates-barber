@@ -9,7 +9,7 @@ class UserProfile(models.Model):
         on_delete=models.CASCADE,
         related_name="profile"
     )
-    stripe_subscription_id = models.CharField("Id do Stripe", max_length=60, blank=False)
+    stripe_subscription_id = models.CharField("Id do Stripe", max_length=60, blank=True, default="")
 
     def __str__(self):
         return f"Perfil de {self.user.username}"
