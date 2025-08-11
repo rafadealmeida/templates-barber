@@ -6,6 +6,8 @@ from rest_framework.validators import UniqueValidator
 
 User = get_user_model()
 
+# TODO : Incrementar o id do grupo de usuários
+
 class ExternalAdminUserSerializer(serializers.Serializer):
     
     username = serializers.CharField(

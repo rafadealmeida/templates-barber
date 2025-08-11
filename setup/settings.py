@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'site_design.apps.SiteDesignConfig',
     'rest_framework',
     'integration_api',
+    "drf_spectacular",
+    "drf_spectacular_sidecar",
 ]
 
 MIDDLEWARE = [
@@ -156,6 +158,30 @@ JAZZMIN_SETTINGS = {
 #         'PORT':os.getenv('DB_URL_PORT'),
 #     }
 # }
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Templates Barber API",
+    "DESCRIPTION": "Endpoints de integração externa.",
+    "VERSION": "1.0.0",
+    "SERVERS": [{"url": "http://127.0.0.1:8000", "description": "Local"}],
+
+    # Define o esquema de segurança via header X-API-KEY
+    "COMPONENTS": {
+        "securitySchemes": {
+            "ApiKeyAuth": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-API-KEY",
+            }
+        }
+    },
+    # Aplica o ApiKeyAuth globalmente (você pode sobrescrever por view)
+    "SECURITY": [{"ApiKeyAuth": []}],
+}
 
 DATABASES = {
   "default": {
