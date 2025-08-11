@@ -27,9 +27,20 @@ def index(request):
         .order_by("nome")
     )
 
+    socials_qs = (
+        InformacaoSite.objects
+        .filter(barbearia=barbearia_atual, categoria=InformacaoSite.Categoria.REDES_SOCIAIS)
+        .select_related("chave")
+        .order_by("chave__chave")       
+    )
+
+    
+
+    socials = {s.chave.chave: (s.url or s.conteudo) for s in socials_qs}
+
     for img in queryImagem:
         conteudo[img.chave.chave] = img.imagem.url
 
-    context = {"conteudo": conteudo, "servicos": servicos}
+    context = {"conteudo": conteudo, "servicos": servicos, "socials": socials, "barbearia": barbearia_atual}
     print(context)
     return render(request, "site_design/index.html", context)

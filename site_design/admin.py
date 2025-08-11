@@ -58,6 +58,10 @@ class ChaveConteudoAdmin(admin.ModelAdmin):
 class ImagensSiteAdmin(admin.ModelAdmin):
     list_display  = ("barbearia", "imagem","chave" ,"criado_em")
     list_filter   = ("barbearia","chave")
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == "chave":
+            kwargs["queryset"] = ChaveConteudo.objects.filter(chave__icontains="imagem")
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
 
 @admin.register(ProfissionalServico)
