@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django import forms
 from .models import (
     Barbearia,
     Profissional,
@@ -8,6 +9,17 @@ from .models import (
     ImagensSite,
     ProfissionalServico
 )
+
+class BarbeariaAdminForm(forms.ModelForm):
+    class Meta:
+        model = Barbearia
+        fields = "__all__"
+        widgets = {
+            "cor_primaria":   forms.TextInput(attrs={"type": "color", "style": "height:2.2rem;width:4.5rem"}),
+            "cor_secundaria": forms.TextInput(attrs={"type": "color", "style": "height:2.2rem;width:4.5rem"}),
+            "cor_destaque":   forms.TextInput(attrs={"type": "color", "style": "height:2.2rem;width:4.5rem"}),
+        }
+
 
 @admin.register(Barbearia)
 class BarbeariaAdmin(admin.ModelAdmin):
