@@ -8,6 +8,8 @@ User = get_user_model()
 
 # TODO : Incrementar o id do grupo de usuários
 
+DEFAULT_USER_GROUP_ID = 1
+
 class ExternalAdminUserSerializer(serializers.Serializer):
     
     username = serializers.CharField(
@@ -28,12 +30,6 @@ class ExternalAdminUserSerializer(serializers.Serializer):
     )
     password = serializers.CharField(write_only=True)
     stripe_subscription_id = serializers.CharField(write_only=True)
-    # team_id = serializers.IntegerField()
-
-    # def validate_team_id(self, value):
-    #     if not Team.objects.filter(pk=value).exists():
-    #         raise serializers.ValidationError("Time não encontrado.")
-    #     return value
 
     def create(self, validated_data):
         # 1) cria user staff
@@ -46,12 +42,13 @@ class ExternalAdminUserSerializer(serializers.Serializer):
         user.save()
 
 
-        # 2) vincula ao grupo alvo
-        # group, _ = Group.objects.get_or_create(name="NomeDoGrupoAlvo")
-        # user.groups.add(group)
-
-        # 3) adiciona ao time
-        # Team.objects.get(pk=validated_data["team_id"]).members.add(user)
+        try:
+            default_group = Group.objects.get(pk=DEFAULT_USER_GROUP_ID)
+            user.groups.add(default_group)
+        except Group.DoesNotExist:
+            raise serializers.ValidationError(
+                "Grupo padrão (id=1) não existe. Crie-o antes de usar a API."
+            )
         
         profile = user.profile
         stripe_subscription_id = validated_data.get("stripe_subscription_id")
