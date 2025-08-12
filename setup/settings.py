@@ -4,6 +4,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv()
 
 
 # Quick-start development settings - unsuitable for production
@@ -11,12 +12,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
+EXTERNAL_API_KEY =str(os.getenv('EXTERNAL_API_KEY'))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "false").lower() == "true"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app", "localhost"]
 
 
 # Application definition
@@ -30,6 +32,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'site_design.apps.SiteDesignConfig',
+    'rest_framework',
+    'integration_api',
+    "drf_spectacular",
+    "drf_spectacular_sidecar",
 ]
 
 MIDDLEWARE = [
@@ -131,7 +137,7 @@ JAZZMIN_SETTINGS = {
     "site_title": "Painel do Admin",         
     "site_header": "Administração",          
     "site_brand": "Meu Painel",              
-    "welcome_sign": "Bem-vindo(a) ao IA Tools!",
+    "welcome_sign": "Bem-vindo(a) ao Barber Sites!",
     "copyright": "© 2025 Minha Empresa",
     
     "show_sidebar": True,
@@ -141,3 +147,45 @@ JAZZMIN_SETTINGS = {
     "order_with_respect_to": ["auth", "meuapp"],
 }
 
+# Conexao com banco
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': str(os.getenv('DB_NAME')),
+        'USER': str(os.getenv('DB_USER')),
+        'PASSWORD': str(os.getenv('DB_PASSWORD')),
+        'HOST': str(os.getenv('DB_URL')),
+        'PORT':os.getenv('DB_URL_PORT'),
+    }
+}
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Templates Barber API",
+    "DESCRIPTION": "Endpoints de integração externa.",
+    "VERSION": "1.0.0",
+    "SERVERS": [{"url": "http://127.0.0.1:8000", "description": "Local"}],
+
+    # Define o esquema de segurança via header X-API-KEY
+    "COMPONENTS": {
+        "securitySchemes": {
+            "ApiKeyAuth": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-API-KEY",
+            }
+        }
+    },
+    # Aplica o ApiKeyAuth globalmente (você pode sobrescrever por view)
+    "SECURITY": [{"ApiKeyAuth": []}],
+}
+
+# DATABASES = {
+#   "default": {
+#     "ENGINE": "django.db.backends.sqlite3",
+#     "NAME": BASE_DIR / "db.sqlite3",
+#   }
+# }

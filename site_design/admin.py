@@ -1,12 +1,25 @@
 from django.contrib import admin
+from django import forms
 from .models import (
     Barbearia,
     Profissional,
     Servico,
     InformacaoSite,
     ChaveConteudo,
-    ImagensSite
+    ImagensSite,
+    ProfissionalServico
 )
+
+class BarbeariaAdminForm(forms.ModelForm):
+    class Meta:
+        model = Barbearia
+        fields = "__all__"
+        widgets = {
+            "cor_primaria":   forms.TextInput(attrs={"type": "color", "style": "height:2.2rem;width:4.5rem"}),
+            "cor_secundaria": forms.TextInput(attrs={"type": "color", "style": "height:2.2rem;width:4.5rem"}),
+            "cor_destaque":   forms.TextInput(attrs={"type": "color", "style": "height:2.2rem;width:4.5rem"}),
+        }
+
 
 @admin.register(Barbearia)
 class BarbeariaAdmin(admin.ModelAdmin):
@@ -57,3 +70,14 @@ class ChaveConteudoAdmin(admin.ModelAdmin):
 class ImagensSiteAdmin(admin.ModelAdmin):
     list_display  = ("barbearia", "imagem","chave" ,"criado_em")
     list_filter   = ("barbearia","chave")
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == "chave":
+            kwargs["queryset"] = ChaveConteudo.objects.filter(chave__icontains="imagem")
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
+
+
+@admin.register(ProfissionalServico)
+class ProfissionalServicoAdmin(admin.ModelAdmin):
+    list_display  = ("profissional", "servico", "duracao_min", "preco_especial")
+    list_filter   = ("profissional", "servico")
+    search_fields = ("profissional__nome", "servico__nome")

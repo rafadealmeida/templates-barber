@@ -1,5 +1,6 @@
 {% extends "site_design/base.html" %} {% load static %} {% block content %}
-{%block extra_css %}
+{%block extra_css %} {% load static l10n %}
+
 <style>
   .bg-home {
     position: relative;
@@ -23,23 +24,41 @@
 <div class="bg-home">
   <nav class="header-content container">
     <div class="header-icons" data-aos="fade-down">
-      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+      {% if socials.INSTAGRAM %}
+      <a href="{{ socials.INSTAGRAM }}" target="_blank"
+        ><i class="fa-brands fa-instagram fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.FACEBOOK %}
+      <a href="{{ socials.FACEBOOK }}" target="_blank"
+        ><i class="fa-brands fa-facebook fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.TIKTOK %}
+      <a href="{{ socials.TIKTOK }}" target="_blank"
+        ><i class="fa-brands fa-tiktok fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.YOUTUBE %}
+      <a href="{{ socials.YOUTUBE }}" target="_blank"
+        ><i class="fa-brands fa-youtube fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.LINKEDIN %}
+      <a href="{{ socials.LINKEDIN }}" target="_blank"
+        ><i class="fa-brands fa-linkedin fa-2x"></i
+      ></a>
+      {% endif %}
     </div>
     <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
       <img
         data-aos="flip-up"
         data-aos-delay="300"
         data-aos-duration="1500"
-        src="{{ conteudo.logo_barbearia }}"
+        src="{{ conteudo.logo_barbearia_imagem }}"
         alt="Logo da barbearia"
       />
     </div>
     <div data-aos="fade-down">
       <a
         class="header-button"
-        href="https://api.whatsapp.com/send/?phone=5561966666666&text=Agendar&type=phone_number&app_absent=0"
+        href="https://api.whatsapp.com/send/?phone={{ socials.WHATSAPP }}&text=Agendar&type=phone_number&app_absent=0"
         target="_blank"
         >Agendar horário</a
       >
@@ -66,16 +85,12 @@
         data-aos="fade-out-left"
         data-aos-delay="250"
       >
-        <h2>Sobre</h2>
+        <h2>{{ conteudo.sobre_titulo }}</h2>
+        <p>{{ conteudo.sobre_texto }}</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          sapiente similique ipsam nisi repudiandae numquam reiciendis natus,
-          velit, nihil veritatis nesciunt veniam! Suscipit, cupiditate
-          perspiciatis optio consequuntur cumque assumenda molestias.
-        </p>
-        <p>
-          Horário de funcionamento: <strong>09:00</strong> ás
-          <strong>19:00</strong>
+          Horário de funcionamento:
+          <strong>{{ conteudo.sobre_horaInicio }}</strong> ás
+          <strong>{{ conteudo.sobre_horaFim }}</strong>
         </p>
       </div>
     </div>
@@ -83,15 +98,44 @@
 
   <section class="services">
     <div class="services-content container">
-      <h2>Serviços</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis neque
-        dolores ab ipsum voluptate quia cumque dolor tempore laborum pariatur.
-        Debitis voluptatem odit molestiae incidunt quis eos harum iste maxime!
-      </p>
+      <h2>{{ conteudo.servico_titulo }}</h2>
+      <p>{{ conteudo.servico_conteudo }}</p>
     </div>
 
     <section class="haircuts">
+      {% for servico in servicos %} {# incrementa o delay em passos de 100ms:
+      250, 350, 450... #} {% widthratio forloop.counter0 1 100 as step %}
+      <div
+        class="haircut"
+        data-aos="fade-up"
+        data-aos-delay="{{ 250|add:step }}"
+      >
+        {% if servico.imagem %}
+        <img src="{{ servico.imagem.url }}" alt="{{ servico.nome }}" />
+        {% else %} {# fallback se o serviço não tiver imagem #}
+        <img
+          src="{% static 'assets/imagens/corte1.png' %}"
+          alt="{{ servico.nome }}"
+        />
+        {% endif %}
+
+        <div class="haircut-info">
+          <strong>{{ servico.nome }}</strong>
+
+          {% if servico.preco %} {# Se o projeto estiver com localize pt-BR, vai
+          sair como 45,00 #} {% localize on %}
+          <button>R$ {{ servico.preco }}</button>
+          {% endlocalize %} {% else %}
+          <button>Consultar</button>
+          {% endif %}
+        </div>
+      </div>
+      {% empty %}
+      <p>Nenhum serviço cadastrado ainda.</p>
+      {% endfor %}
+    </section>
+
+    <!-- <section class="haircuts">
       <div class="haircut" data-aos="fade-up" data-aos-delay="250">
         <img src="{% static 'assets/imagens/corte1.png' %}" alt="" />
         <div class="haircut-info">
@@ -113,32 +157,52 @@
           <button>R$ 85,00</button>
         </div>
       </div>
-    </section>
+    </section> -->
   </section>
 
   <div class="services">
     <h2>Venha conhecer</h2>
   </div>
 
+  {% if barbearia.google_maps_url %}
   <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239.89881341154944!2d-48.055812821993165!3d-15.836559569216686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a32eb87e4d727%3A0x205e0757a9d8a915!2sBarbearia%20Executiva!5e0!3m2!1spt-BR!2sbr!4v1715820553207!5m2!1spt-BR!2sbr"
+    src="{{ barbearia.google_maps_url }}"
     width="100%"
-    height="450"
+    height="380"
     style="border: 0"
-    allowfullscreen=""
+    allowfullscreen
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
   ></iframe>
+  {% endif %}
 
   <footer class="footer">
     <div class="container-icons">
-      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+      {% if socials.INSTAGRAM %}
+      <a href="{{ socials.INSTAGRAM }}" target="_blank"
+        ><i class="fa-brands fa-instagram fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.FACEBOOK %}
+      <a href="{{ socials.FACEBOOK }}" target="_blank"
+        ><i class="fa-brands fa-facebook fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.TIKTOK %}
+      <a href="{{ socials.TIKTOK }}" target="_blank"
+        ><i class="fa-brands fa-tiktok fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.YOUTUBE %}
+      <a href="{{ socials.YOUTUBE }}" target="_blank"
+        ><i class="fa-brands fa-youtube fa-2x"></i
+      ></a>
+      {% endif %} {% if socials.LINKEDIN %}
+      <a href="{{ socials.LINKEDIN }}" target="_blank"
+        ><i class="fa-brands fa-linkedin fa-2x"></i
+      ></a>
+      {% endif %}
     </div>
 
     <div class=" ">
-      <img src="{{ conteudo.logo_barbearia }}" alt="Logo da barbearia" />
+      <img src="{{ conteudo.logo_barbearia_imagem }}" alt="Logo da barbearia" />
     </div>
 
     <p>Copyright 2024 | Dev Barber - Todos direitos reservados</p>
@@ -147,7 +211,7 @@
   <a
     data-aos="zoom-in-up"
     data-aos-delay="400"
-    href="https://api.whatsapp.com/send/?phone=5561966666666&text=Agendar&type=phone_number&app_absent=0"
+    href="https://api.whatsapp.com/send/?phone={{ socials.WHATSAPP }}&text=Agendar&type=phone_number&app_absent=0"
     class="btn-whatsapp"
     target="_blank"
   >

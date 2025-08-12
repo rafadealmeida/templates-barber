@@ -1,0 +1,1071 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "barbearia"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "barbeariaredesocial"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "conteudosite"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "profissional"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "promocaoevento"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "servico"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "informacaosite"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "chaveconteudo"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "imagenssite"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "site_design",
+      "model": "profissionalservico"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "integration_api",
+      "model": "userprofile"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "6xdtjj70fuxyxnkvv0d6t6b2f525hkdu",
+    "fields": {
+      "session_data": ".eJxVjDEOwyAQBP9CHSEwZwEp0-cN6O6A4CQCydiVlb_HllwkxTY7s7uJgOtSwtrTHKYorgLE5bcj5FeqB4hPrI8mudVlnkgeijxpl_cW0_t2un8HBXvZ18qN1nrkDMRAmozRnpzylA0RjmwHSIzeJT_ozAoQMO9xaC0C6yw-X_VGOLg:1ulc4g:1p2MQnBmV-n2B2_eUNDEhkXYJu-i0SnqmT4wFYDTjxs",
+      "expire_date": "2025-08-25T23:37:06.675Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "f0guz0pove2ueu7ksznjzy8zbbs1ujl8",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSEgb5fu-w1kYAapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKM7MIkO_1uCfKD2g7wDu3Wee5tXebEd4UfdPCpIz2vh_t3UGHUbw0UXCleWICCFlCYM0ntyBqrSsKclDKA4JTNQVMwXgntipXFaS-VdOz9AQQVN-I:1uNhu3:qXMROYerlh_KACo9r98-alG8b2vJZxphjz2q6tmPFaA",
+      "expire_date": "2025-06-21T00:59:19.954Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "fp0cuxb4jww0dbmxf8g4yjq9ne4jh70i",
+    "fields": {
+      "session_data": "e30:1ulE4e:84vBLhFKv62T5iDjvJtGZWy6bJQV1s60TOOim2p7sd8",
+      "expire_date": "2025-08-24T21:59:28.794Z"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "11c7d06d-5b8b-4068-a69c-686d6aae39dd",
+    "fields": {
+      "chave": "banner_titulo",
+      "descricao": "Titulo que ser� exibido no banner principal"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "1b4f99d0-1645-4f42-96d7-8489323edb85",
+    "fields": {
+      "chave": "servico_conteudo",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "3c7a6d3b-a96a-4283-ab40-2af16bfc0e61",
+    "fields": {
+      "chave": "FACEBOOK",
+      "descricao": "P�gina do Facebook"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "47e635b9-8369-41c2-aadb-4b81e011d87d",
+    "fields": {
+      "chave": "banner_imagem",
+      "descricao": "Imagem que aparecer� no banner principal"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "5a8a9803-4ecd-4c25-941c-64a782cb5494",
+    "fields": {
+      "chave": "TIKTOK",
+      "descricao": "Perfil do TikTok"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "662b7735-f2c0-4ef8-9889-5a13e3cd83ca",
+    "fields": {
+      "chave": "WHATSAPP",
+      "descricao": "N�mero WhatsApp (DDI+DDD)"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "67e1afb6-89b7-4eb8-941d-33a90bc12f40",
+    "fields": {
+      "chave": "INSTAGRAM",
+      "descricao": "Perfil do Instagram"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "778d3640-66be-4ca0-9177-1ba0b0981b50",
+    "fields": {
+      "chave": "banner_texto_botao",
+      "descricao": "Texto no bot�o que ser� exibido no banner principal"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "7f64d8a9-2e3a-4b99-a381-988609d341fa",
+    "fields": {
+      "chave": "logo_barbearia_imagem_alt",
+      "descricao": "Logo da barbearia alternativo"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "8532c206-5b26-4ec2-a396-d47099849642",
+    "fields": {
+      "chave": "sobre_titulo",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "898461f4-e50a-4d97-9121-6bb9178f5a12",
+    "fields": {
+      "chave": "sobre_texto",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "89954808-8f95-440d-8af8-cbd50ade43e2",
+    "fields": {
+      "chave": "YOUTUBE",
+      "descricao": "Canal do YouTube"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "8f2d83a5-9cef-4c26-baf8-df197bb5d8fc",
+    "fields": {
+      "chave": "sobre_horaFim",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "90dd0695-b1e8-4ed8-b7f6-15396b98de93",
+    "fields": {
+      "chave": "banner_subtitulo",
+      "descricao": "Sub-t�tulo que ser� exibido no banner principal"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "9e6bd826-76ae-439e-82e6-72b62cfee1e2",
+    "fields": {
+      "chave": "LINKEDIN",
+      "descricao": "P�gina do LinkedIn"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "b1c6353a-b272-4bac-9845-288fccc5dba0",
+    "fields": {
+      "chave": "logo_barbearia_imagem",
+      "descricao": "Logo da barbearia"
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "b610e96c-6f33-4a42-8655-f2585e09d353",
+    "fields": {
+      "chave": "sobre_horaInicio",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "site_design.chaveconteudo",
+    "pk": "de2066be-759b-47ee-991e-928323a194ec",
+    "fields": {
+      "chave": "servico_titulo",
+      "descricao": ""
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "010d5745-6aa0-4ca4-b186-823e66dac2cd",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "90dd0695-b1e8-4ed8-b7f6-15396b98de93",
+      "conteudo": "Banner Sub-Titulo",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:54:32.365Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "1b821feb-8523-4470-a9a4-606e9c743dc7",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "1b4f99d0-1645-4f42-96d7-8489323edb85",
+      "conteudo": "Servi�o conte�do",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:58:58.921Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "6d8c47f8-b0d4-418e-8186-d73a5e3910b8",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "8532c206-5b26-4ec2-a396-d47099849642",
+      "conteudo": "Sobre",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:59:09.063Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "967411fe-8e62-4cc6-9f61-956e37136b59",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "de2066be-759b-47ee-991e-928323a194ec",
+      "conteudo": "Servi�os T�tulos",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:54:59.489Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "a4fa4cb5-9c26-4f85-b15c-4efd9e7287a2",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "8f2d83a5-9cef-4c26-baf8-df197bb5d8fc",
+      "conteudo": "18:00",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:55:56.397Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "b7f13b6d-ab80-4018-9736-4ff80428348d",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "b610e96c-6f33-4a42-8655-f2585e09d353",
+      "conteudo": "09:00",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:55:41.213Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "c997b70f-86f1-404a-9779-2f1f9f5218bc",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "778d3640-66be-4ca0-9177-1ba0b0981b50",
+      "conteudo": "Banner bot�o",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:54:43.442Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "d3872e0e-ff4f-49d9-97ff-fd4574783b8b",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "11c7d06d-5b8b-4068-a69c-686d6aae39dd",
+      "conteudo": "Banner Titulo",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:54:21.353Z"
+    }
+  },
+  {
+    "model": "site_design.informacaosite",
+    "pk": "ea36480b-95a1-45b4-b5ed-60c31382c47b",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "categoria": "CONTEUDO_SITE",
+      "chave": "898461f4-e50a-4d97-9121-6bb9178f5a12",
+      "conteudo": "Servi�os Conte�dos",
+      "url": null,
+      "data_inicio": null,
+      "data_fim": null,
+      "criado_em": "2025-08-10T23:55:15.215Z"
+    }
+  },
+  {
+    "model": "site_design.imagenssite",
+    "pk": "265e366d-94d5-4dbe-922e-2bcf1815a765",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "imagem": "imagens_site/logo.png",
+      "criado_em": "2025-06-10T21:46:49.516Z",
+      "chave": "b1c6353a-b272-4bac-9845-288fccc5dba0"
+    }
+  },
+  {
+    "model": "site_design.imagenssite",
+    "pk": "67e009b1-fb7f-4207-b661-ae3a1c3861ce",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "imagem": "imagens_site/bg.jpg",
+      "criado_em": "2025-06-10T20:52:27.383Z",
+      "chave": "47e635b9-8369-41c2-aadb-4b81e011d87d"
+    }
+  },
+  {
+    "model": "site_design.imagenssite",
+    "pk": "7818eaac-b215-4b0b-9030-402e5ab81c9f",
+    "fields": {
+      "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+      "imagem": "imagens_site/logo-black.png",
+      "criado_em": "2025-06-10T21:47:28.128Z",
+      "chave": "7f64d8a9-2e3a-4b99-a381-988609d341fa"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": ["admin", "logentry"],
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": ["admin", "logentry"],
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": ["admin", "logentry"],
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": ["admin", "logentry"],
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add permission",
+      "content_type": ["auth", "permission"],
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change permission",
+      "content_type": ["auth", "permission"],
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": ["auth", "permission"],
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view permission",
+      "content_type": ["auth", "permission"],
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add group",
+      "content_type": ["auth", "group"],
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change group",
+      "content_type": ["auth", "group"],
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete group",
+      "content_type": ["auth", "group"],
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view group",
+      "content_type": ["auth", "group"],
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add user",
+      "content_type": ["auth", "user"],
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change user",
+      "content_type": ["auth", "user"],
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete user",
+      "content_type": ["auth", "user"],
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view user",
+      "content_type": ["auth", "user"],
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add content type",
+      "content_type": ["contenttypes", "contenttype"],
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change content type",
+      "content_type": ["contenttypes", "contenttype"],
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": ["contenttypes", "contenttype"],
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view content type",
+      "content_type": ["contenttypes", "contenttype"],
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add session",
+      "content_type": ["sessions", "session"],
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change session",
+      "content_type": ["sessions", "session"],
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete session",
+      "content_type": ["sessions", "session"],
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view session",
+      "content_type": ["sessions", "session"],
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add barbearia",
+      "content_type": ["site_design", "barbearia"],
+      "codename": "add_barbearia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change barbearia",
+      "content_type": ["site_design", "barbearia"],
+      "codename": "change_barbearia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete barbearia",
+      "content_type": ["site_design", "barbearia"],
+      "codename": "delete_barbearia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view barbearia",
+      "content_type": ["site_design", "barbearia"],
+      "codename": "view_barbearia"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add barbearia rede social",
+      "content_type": ["site_design", "barbeariaredesocial"],
+      "codename": "add_barbeariaredesocial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change barbearia rede social",
+      "content_type": ["site_design", "barbeariaredesocial"],
+      "codename": "change_barbeariaredesocial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete barbearia rede social",
+      "content_type": ["site_design", "barbeariaredesocial"],
+      "codename": "delete_barbeariaredesocial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view barbearia rede social",
+      "content_type": ["site_design", "barbeariaredesocial"],
+      "codename": "view_barbeariaredesocial"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add conteudo site",
+      "content_type": ["site_design", "conteudosite"],
+      "codename": "add_conteudosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change conteudo site",
+      "content_type": ["site_design", "conteudosite"],
+      "codename": "change_conteudosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete conteudo site",
+      "content_type": ["site_design", "conteudosite"],
+      "codename": "delete_conteudosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view conteudo site",
+      "content_type": ["site_design", "conteudosite"],
+      "codename": "view_conteudosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add profissional",
+      "content_type": ["site_design", "profissional"],
+      "codename": "add_profissional"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change profissional",
+      "content_type": ["site_design", "profissional"],
+      "codename": "change_profissional"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete profissional",
+      "content_type": ["site_design", "profissional"],
+      "codename": "delete_profissional"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view profissional",
+      "content_type": ["site_design", "profissional"],
+      "codename": "view_profissional"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add promocao evento",
+      "content_type": ["site_design", "promocaoevento"],
+      "codename": "add_promocaoevento"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change promocao evento",
+      "content_type": ["site_design", "promocaoevento"],
+      "codename": "change_promocaoevento"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete promocao evento",
+      "content_type": ["site_design", "promocaoevento"],
+      "codename": "delete_promocaoevento"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view promocao evento",
+      "content_type": ["site_design", "promocaoevento"],
+      "codename": "view_promocaoevento"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add servico",
+      "content_type": ["site_design", "servico"],
+      "codename": "add_servico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change servico",
+      "content_type": ["site_design", "servico"],
+      "codename": "change_servico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete servico",
+      "content_type": ["site_design", "servico"],
+      "codename": "delete_servico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view servico",
+      "content_type": ["site_design", "servico"],
+      "codename": "view_servico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add informacao site",
+      "content_type": ["site_design", "informacaosite"],
+      "codename": "add_informacaosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change informacao site",
+      "content_type": ["site_design", "informacaosite"],
+      "codename": "change_informacaosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete informacao site",
+      "content_type": ["site_design", "informacaosite"],
+      "codename": "delete_informacaosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view informacao site",
+      "content_type": ["site_design", "informacaosite"],
+      "codename": "view_informacaosite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add chave conteudo",
+      "content_type": ["site_design", "chaveconteudo"],
+      "codename": "add_chaveconteudo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change chave conteudo",
+      "content_type": ["site_design", "chaveconteudo"],
+      "codename": "change_chaveconteudo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete chave conteudo",
+      "content_type": ["site_design", "chaveconteudo"],
+      "codename": "delete_chaveconteudo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view chave conteudo",
+      "content_type": ["site_design", "chaveconteudo"],
+      "codename": "view_chaveconteudo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add imagens site",
+      "content_type": ["site_design", "imagenssite"],
+      "codename": "add_imagenssite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change imagens site",
+      "content_type": ["site_design", "imagenssite"],
+      "codename": "change_imagenssite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete imagens site",
+      "content_type": ["site_design", "imagenssite"],
+      "codename": "delete_imagenssite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view imagens site",
+      "content_type": ["site_design", "imagenssite"],
+      "codename": "view_imagenssite"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add profissional servico",
+      "content_type": ["site_design", "profissionalservico"],
+      "codename": "add_profissionalservico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change profissional servico",
+      "content_type": ["site_design", "profissionalservico"],
+      "codename": "change_profissionalservico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete profissional servico",
+      "content_type": ["site_design", "profissionalservico"],
+      "codename": "delete_profissionalservico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view profissional servico",
+      "content_type": ["site_design", "profissionalservico"],
+      "codename": "view_profissionalservico"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add user profile",
+      "content_type": ["integration_api", "userprofile"],
+      "codename": "add_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change user profile",
+      "content_type": ["integration_api", "userprofile"],
+      "codename": "change_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete user profile",
+      "content_type": ["integration_api", "userprofile"],
+      "codename": "delete_userprofile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view user profile",
+      "content_type": ["integration_api", "userprofile"],
+      "codename": "view_userprofile"
+    }
+  },
+  {
+    "model": "auth.group",
+    "fields": {
+      "name": "Administrador da Barbearia",
+      "permissions": [
+        ["view_contenttype", "contenttypes", "contenttype"],
+        ["change_barbearia", "site_design", "barbearia"],
+        ["view_barbearia", "site_design", "barbearia"],
+        ["change_barbeariaredesocial", "site_design", "barbeariaredesocial"],
+        ["view_barbeariaredesocial", "site_design", "barbeariaredesocial"],
+        ["view_chaveconteudo", "site_design", "chaveconteudo"],
+        ["add_conteudosite", "site_design", "conteudosite"],
+        ["change_conteudosite", "site_design", "conteudosite"],
+        ["view_conteudosite", "site_design", "conteudosite"],
+        ["add_imagenssite", "site_design", "imagenssite"],
+        ["change_imagenssite", "site_design", "imagenssite"],
+        ["delete_imagenssite", "site_design", "imagenssite"],
+        ["view_imagenssite", "site_design", "imagenssite"],
+        ["add_informacaosite", "site_design", "informacaosite"],
+        ["change_informacaosite", "site_design", "informacaosite"],
+        ["view_informacaosite", "site_design", "informacaosite"],
+        ["add_profissional", "site_design", "profissional"],
+        ["change_profissional", "site_design", "profissional"],
+        ["delete_profissional", "site_design", "profissional"],
+        ["view_profissional", "site_design", "profissional"],
+        ["add_profissionalservico", "site_design", "profissionalservico"],
+        ["change_profissionalservico", "site_design", "profissionalservico"],
+        ["delete_profissionalservico", "site_design", "profissionalservico"],
+        ["view_profissionalservico", "site_design", "profissionalservico"],
+        ["add_promocaoevento", "site_design", "promocaoevento"],
+        ["change_promocaoevento", "site_design", "promocaoevento"],
+        ["delete_promocaoevento", "site_design", "promocaoevento"],
+        ["view_promocaoevento", "site_design", "promocaoevento"],
+        ["add_servico", "site_design", "servico"],
+        ["change_servico", "site_design", "servico"],
+        ["delete_servico", "site_design", "servico"],
+        ["view_servico", "site_design", "servico"]
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$8zr8rTwkgUeTnjNNRokivq$565rZqZxo6AqIg7X2xEEa+pgvjhypM81DeiaBtPUsH4=",
+      "last_login": "2025-08-10T23:31:30.949Z",
+      "is_superuser": true,
+      "username": "superuser",
+      "first_name": "",
+      "last_name": "",
+      "email": "rafael.almeida.dev@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-06-07T00:58:30.252Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "site_design.barbearia",
+    "pk": "9e67434f-b28f-4c97-8164-01ba68997502",
+    "fields": {
+      "nome": "Barbearia",
+      "logo": "logos/https___meta-l.cdn.bubble.io_f1695308256768x626644891139990000_open-ai.png",
+      "cor_primaria": "06121e",
+      "cor_secundaria": "090d11",
+      "cor_destaque": null,
+      "telefone_whatsapp": "61999999999",
+      "endereco": "72015-010",
+      "google_maps_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4308.35117515919!2d-48.060415193484225!3d-15.840590381901324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a32eb87e4d727%3A0x205e0757a9d8a915!2sBarbearia%20Executiva!5e0!3m2!1spt-PT!2sbr!4v1754868569548!5m2!1spt-PT!2sbr",
+      "descricao": "Teste",
+      "criado_em": "2025-06-07T01:20:08.840Z",
+      "proprietario": ["superuser"]
+    }
+  },
+  {
+    "model": "integration_api.userprofile",
+    "pk": 1,
+    "fields": {
+      "user": ["superuser"],
+      "stripe_subscription_id": "admin"
+    }
+  }
+]
