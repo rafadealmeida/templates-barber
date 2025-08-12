@@ -8,9 +8,11 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
 """
 
 import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "setup.settings")
+
+import pymysql
+pymysql.install_as_MySQLdb()
 
 from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'setup.settings')
-
-application = get_wsgi_application()
+app = get_wsgi_application()
+application = app  

@@ -92,7 +92,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), var(--bg-site);
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
   left: 0;
   top: 0;
   width: 100%;
@@ -356,4 +356,4 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
