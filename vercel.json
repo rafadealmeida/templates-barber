@@ -1,10 +1,3 @@
 {
-  "builds": [{ "src": "setup/wsgi.py", "use": "@vercel/python" }],
-  "env": {
-    "DB_NAME": "@db_name",
-    "DB_USER": "@db_user",
-    "DB_PASSWORD": "@db_password",
-    "DB_URL": "@db_url",
-    "DB_URL_PORT": "@db_url_port"
-  }
+  "builds": [{ "src": "setup/wsgi.py", "use": "@vercel/python" }]
 }
