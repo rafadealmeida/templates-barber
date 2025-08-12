@@ -1,272 +1,544 @@
-[
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "11c7d06d-5b8b-4068-a69c-686d6aae39dd",
-  "fields": {
-    "chave": "banner_titulo",
-    "descricao": "Titulo que ser· exibido no banner principal"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "1b4f99d0-1645-4f42-96d7-8489323edb85",
-  "fields": {
-    "chave": "servico_conteudo",
-    "descricao": ""
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "3c7a6d3b-a96a-4283-ab40-2af16bfc0e61",
-  "fields": {
-    "chave": "FACEBOOK",
-    "descricao": "P·gina do Facebook"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "47e635b9-8369-41c2-aadb-4b81e011d87d",
-  "fields": {
-    "chave": "banner_imagem",
-    "descricao": "Imagem que aparecer· no banner principal"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "5a8a9803-4ecd-4c25-941c-64a782cb5494",
-  "fields": {
-    "chave": "TIKTOK",
-    "descricao": "Perfil do TikTok"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "662b7735-f2c0-4ef8-9889-5a13e3cd83ca",
-  "fields": {
-    "chave": "WHATSAPP",
-    "descricao": "N˙mero WhatsApp (DDI+DDD)"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "67e1afb6-89b7-4eb8-941d-33a90bc12f40",
-  "fields": {
-    "chave": "INSTAGRAM",
-    "descricao": "Perfil do Instagram"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "778d3640-66be-4ca0-9177-1ba0b0981b50",
-  "fields": {
-    "chave": "banner_texto_botao",
-    "descricao": "Texto no bot„o que ser· exibido no banner principal"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "7f64d8a9-2e3a-4b99-a381-988609d341fa",
-  "fields": {
-    "chave": "logo_barbearia_imagem_alt",
-    "descricao": "Logo da barbearia alternativo"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "8532c206-5b26-4ec2-a396-d47099849642",
-  "fields": {
-    "chave": "sobre_titulo",
-    "descricao": ""
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "898461f4-e50a-4d97-9121-6bb9178f5a12",
-  "fields": {
-    "chave": "sobre_texto",
-    "descricao": ""
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "89954808-8f95-440d-8af8-cbd50ade43e2",
-  "fields": {
-    "chave": "YOUTUBE",
-    "descricao": "Canal do YouTube"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "8f2d83a5-9cef-4c26-baf8-df197bb5d8fc",
-  "fields": {
-    "chave": "sobre_horaFim",
-    "descricao": ""
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "90dd0695-b1e8-4ed8-b7f6-15396b98de93",
-  "fields": {
-    "chave": "banner_subtitulo",
-    "descricao": "Sub-tÌtulo que ser· exibido no banner principal"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "9e6bd826-76ae-439e-82e6-72b62cfee1e2",
-  "fields": {
-    "chave": "LINKEDIN",
-    "descricao": "P·gina do LinkedIn"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "b1c6353a-b272-4bac-9845-288fccc5dba0",
-  "fields": {
-    "chave": "logo_barbearia_imagem",
-    "descricao": "Logo da barbearia"
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "b610e96c-6f33-4a42-8655-f2585e09d353",
-  "fields": {
-    "chave": "sobre_horaInicio",
-    "descricao": ""
-  }
-},
-{
-  "model": "site_design.chaveconteudo",
-  "pk": "de2066be-759b-47ee-991e-928323a194ec",
-  "fields": {
-    "chave": "servico_titulo",
-    "descricao": ""
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "010d5745-6aa0-4ca4-b186-823e66dac2cd",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "90dd0695-b1e8-4ed8-b7f6-15396b98de93",
-    "conteudo": "Banner Sub-Titulo",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:54:32.365Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "1b821feb-8523-4470-a9a4-606e9c743dc7",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "1b4f99d0-1645-4f42-96d7-8489323edb85",
-    "conteudo": "ServiÁo conte˙do",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:58:58.921Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "6d8c47f8-b0d4-418e-8186-d73a5e3910b8",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "8532c206-5b26-4ec2-a396-d47099849642",
-    "conteudo": "Sobre",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:59:09.063Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "967411fe-8e62-4cc6-9f61-956e37136b59",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "de2066be-759b-47ee-991e-928323a194ec",
-    "conteudo": "ServiÁos TÌtulos",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:54:59.489Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "a4fa4cb5-9c26-4f85-b15c-4efd9e7287a2",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "8f2d83a5-9cef-4c26-baf8-df197bb5d8fc",
-    "conteudo": "18:00",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:55:56.397Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "b7f13b6d-ab80-4018-9736-4ff80428348d",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "b610e96c-6f33-4a42-8655-f2585e09d353",
-    "conteudo": "09:00",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:55:41.213Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "c997b70f-86f1-404a-9779-2f1f9f5218bc",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "778d3640-66be-4ca0-9177-1ba0b0981b50",
-    "conteudo": "Banner bot„o",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:54:43.442Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "d3872e0e-ff4f-49d9-97ff-fd4574783b8b",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "11c7d06d-5b8b-4068-a69c-686d6aae39dd",
-    "conteudo": "Banner Titulo",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:54:21.353Z"
-  }
-},
-{
-  "model": "site_design.informacaosite",
-  "pk": "ea36480b-95a1-45b4-b5ed-60c31382c47b",
-  "fields": {
-    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
-    "categoria": "CONTEUDO_SITE",
-    "chave": "898461f4-e50a-4d97-9121-6bb9178f5a12",
-    "conteudo": "ServiÁos Conte˙dos",
-    "url": null,
-    "data_inicio": null,
-    "data_fim": null,
-    "criado_em": "2025-08-10T23:55:15.215Z"
-  }
-}
-]
+[
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "11c7d06d-5b8b-4068-a69c-686d6aae39dd",
+
+  "fields": {
+
+    "chave": "banner_titulo",
+
+    "descricao": "Titulo que ser√° exibido no banner principal"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "1b4f99d0-1645-4f42-96d7-8489323edb85",
+
+  "fields": {
+
+    "chave": "servico_conteudo",
+
+    "descricao": ""
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "3c7a6d3b-a96a-4283-ab40-2af16bfc0e61",
+
+  "fields": {
+
+    "chave": "FACEBOOK",
+
+    "descricao": "P√°gina do Facebook"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "47e635b9-8369-41c2-aadb-4b81e011d87d",
+
+  "fields": {
+
+    "chave": "banner_imagem",
+
+    "descricao": "Imagem que aparecer√° no banner principal"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "5a8a9803-4ecd-4c25-941c-64a782cb5494",
+
+  "fields": {
+
+    "chave": "TIKTOK",
+
+    "descricao": "Perfil do TikTok"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "662b7735-f2c0-4ef8-9889-5a13e3cd83ca",
+
+  "fields": {
+
+    "chave": "WHATSAPP",
+
+    "descricao": "N√∫mero WhatsApp (DDI+DDD)"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "67e1afb6-89b7-4eb8-941d-33a90bc12f40",
+
+  "fields": {
+
+    "chave": "INSTAGRAM",
+
+    "descricao": "Perfil do Instagram"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "778d3640-66be-4ca0-9177-1ba0b0981b50",
+
+  "fields": {
+
+    "chave": "banner_texto_botao",
+
+    "descricao": "Texto no bot√£o que ser√° exibido no banner principal"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "7f64d8a9-2e3a-4b99-a381-988609d341fa",
+
+  "fields": {
+
+    "chave": "logo_barbearia_imagem_alt",
+
+    "descricao": "Logo da barbearia alternativo"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "8532c206-5b26-4ec2-a396-d47099849642",
+
+  "fields": {
+
+    "chave": "sobre_titulo",
+
+    "descricao": ""
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "898461f4-e50a-4d97-9121-6bb9178f5a12",
+
+  "fields": {
+
+    "chave": "sobre_texto",
+
+    "descricao": ""
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "89954808-8f95-440d-8af8-cbd50ade43e2",
+
+  "fields": {
+
+    "chave": "YOUTUBE",
+
+    "descricao": "Canal do YouTube"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "8f2d83a5-9cef-4c26-baf8-df197bb5d8fc",
+
+  "fields": {
+
+    "chave": "sobre_horaFim",
+
+    "descricao": ""
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "90dd0695-b1e8-4ed8-b7f6-15396b98de93",
+
+  "fields": {
+
+    "chave": "banner_subtitulo",
+
+    "descricao": "Sub-t√≠tulo que ser√° exibido no banner principal"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "9e6bd826-76ae-439e-82e6-72b62cfee1e2",
+
+  "fields": {
+
+    "chave": "LINKEDIN",
+
+    "descricao": "P√°gina do LinkedIn"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "b1c6353a-b272-4bac-9845-288fccc5dba0",
+
+  "fields": {
+
+    "chave": "logo_barbearia_imagem",
+
+    "descricao": "Logo da barbearia"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "b610e96c-6f33-4a42-8655-f2585e09d353",
+
+  "fields": {
+
+    "chave": "sobre_horaInicio",
+
+    "descricao": ""
+
+  }
+
+},
+
+{
+
+  "model": "site_design.chaveconteudo",
+
+  "pk": "de2066be-759b-47ee-991e-928323a194ec",
+
+  "fields": {
+
+    "chave": "servico_titulo",
+
+    "descricao": ""
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "010d5745-6aa0-4ca4-b186-823e66dac2cd",
+
+  "fields": {
+
+    "barbearia": "077515492deb4377be5a45a00e04c90a",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "90dd0695-b1e8-4ed8-b7f6-15396b98de93",
+
+    "conteudo": "Banner Sub-Titulo",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:54:32.365Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "1b821feb-8523-4470-a9a4-606e9c743dc7",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "1b4f99d0-1645-4f42-96d7-8489323edb85",
+
+    "conteudo": "Servi√ßo conte√∫do",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:58:58.921Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "6d8c47f8-b0d4-418e-8186-d73a5e3910b8",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "8532c206-5b26-4ec2-a396-d47099849642",
+
+    "conteudo": "Sobre",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:59:09.063Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "967411fe-8e62-4cc6-9f61-956e37136b59",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "de2066be-759b-47ee-991e-928323a194ec",
+
+    "conteudo": "Servi√ßos T√≠tulos",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:54:59.489Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "a4fa4cb5-9c26-4f85-b15c-4efd9e7287a2",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "8f2d83a5-9cef-4c26-baf8-df197bb5d8fc",
+
+    "conteudo": "18:00",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:55:56.397Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "b7f13b6d-ab80-4018-9736-4ff80428348d",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "b610e96c-6f33-4a42-8655-f2585e09d353",
+
+    "conteudo": "09:00",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:55:41.213Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "c997b70f-86f1-404a-9779-2f1f9f5218bc",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "778d3640-66be-4ca0-9177-1ba0b0981b50",
+
+    "conteudo": "Banner bot√£o",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:54:43.442Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "d3872e0e-ff4f-49d9-97ff-fd4574783b8b",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "11c7d06d-5b8b-4068-a69c-686d6aae39dd",
+
+    "conteudo": "Banner Titulo",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:54:21.353Z"
+
+  }
+
+},
+
+{
+
+  "model": "site_design.informacaosite",
+
+  "pk": "ea36480b-95a1-45b4-b5ed-60c31382c47b",
+
+  "fields": {
+
+    "barbearia": "9e67434f-b28f-4c97-8164-01ba68997502",
+
+    "categoria": "CONTEUDO_SITE",
+
+    "chave": "898461f4-e50a-4d97-9121-6bb9178f5a12",
+
+    "conteudo": "Servi√ßos Conte√∫dos",
+
+    "url": null,
+
+    "data_inicio": null,
+
+    "data_fim": null,
+
+    "criado_em": "2025-08-10T23:55:15.215Z"
+
+  }
+
+}
+
+]
+
