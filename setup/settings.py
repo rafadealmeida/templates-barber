@@ -16,9 +16,9 @@ EXTERNAL_API_KEY =str(os.getenv('EXTERNAL_API_KEY'))
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "false").lower() == "true"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app", "localhost"]
 
 
 # Application definition
@@ -148,16 +148,16 @@ JAZZMIN_SETTINGS = {
 }
 
 # Conexao com banco
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': str(os.getenv('DB_NAME')),
-#         'USER': str(os.getenv('DB_USER')),
-#         'PASSWORD': str(os.getenv('DB_PASSWORD')),
-#         'HOST': str(os.getenv('DB_URL')),
-#         'PORT':os.getenv('DB_URL_PORT'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': str(os.getenv('DB_NAME')),
+        'USER': str(os.getenv('DB_USER')),
+        'PASSWORD': str(os.getenv('DB_PASSWORD')),
+        'HOST': str(os.getenv('DB_URL')),
+        'PORT':os.getenv('DB_URL_PORT'),
+    }
+}
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
@@ -183,9 +183,9 @@ SPECTACULAR_SETTINGS = {
     "SECURITY": [{"ApiKeyAuth": []}],
 }
 
-DATABASES = {
-  "default": {
-    "ENGINE": "django.db.backends.sqlite3",
-    "NAME": BASE_DIR / "db.sqlite3",
-  }
-}
+# DATABASES = {
+#   "default": {
+#     "ENGINE": "django.db.backends.sqlite3",
+#     "NAME": BASE_DIR / "db.sqlite3",
+#   }
+# }
