@@ -1,7 +1,10 @@
 {
-  "builds": [{ "src": "setup/wsgi.py", "use": "@vercel/python" }],
-  "routes": [
-    { "src": "/static/(.*)", "dest": "/static/$1" },
-    { "src": "/(.*)", "dest": "setup/wsgi.py" }
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/**/*.py": { "runtime": "vercel-python@3.12" }
+  },
+  "rewrites": [
+    { "source": "/static/(.*)", "destination": "/static/$1" },
+    { "source": "/(.*)", "destination": "/api/wsgi.py" }
   ]
 }

@@ -81,7 +81,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'setup.wsgi.application'
+# WSGI_APPLICATION = 'setup.wsgi.application'
+# Para vercel, use:
+WSGI_APPLICATION = "api.wsgi.app"
 
 
 # Database
@@ -154,12 +156,12 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Painel do Admin",         
-    "site_header": "Administração",          
-    "site_brand": "Meu Painel",              
+    "site_title": "Painel do Admin",
+    "site_header": "Administração",
+    "site_brand": "Meu Painel",
     "welcome_sign": "Bem-vindo(a) ao Barber Sites!",
     "copyright": "© 2025 Minha Empresa",
-    
+
     "show_sidebar": True,
     "navigation_expanded": True,
     "hide_apps": [],
