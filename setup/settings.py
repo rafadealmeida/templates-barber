@@ -13,6 +13,7 @@ load_dotenv()
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 EXTERNAL_API_KEY =str(os.getenv('EXTERNAL_API_KEY'))
+CLOUDINARY_URL = os.getenv("CLOUDINARY_URL", "")
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -50,6 +51,8 @@ INSTALLED_APPS = [
     'integration_api',
     "drf_spectacular",
     "drf_spectacular_sidecar",
+    "cloudinary",
+    "cloudinary_storage",
 ]
 
 MIDDLEWARE = [
@@ -62,6 +65,15 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+STORAGES = {
+    "default": {
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 ROOT_URLCONF = 'setup.urls'
 
@@ -84,17 +96,6 @@ TEMPLATES = [
 # WSGI_APPLICATION = 'setup.wsgi.application'
 # Para vercel, use:
 WSGI_APPLICATION = "api.wsgi.app"
-
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation

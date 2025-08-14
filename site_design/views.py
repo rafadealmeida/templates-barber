@@ -39,8 +39,10 @@ def index(request):
     socials = {s.chave.chave: (s.url or s.conteudo) for s in socials_qs}
 
     for img in queryImagem:
-        conteudo[img.chave.chave] = img.imagem.url
+        try:
+            conteudo[img.chave.chave] = img.imagem.url
+        except Exception:
+            pass
 
     context = {"conteudo": conteudo, "servicos": servicos, "socials": socials, "barbearia": barbearia_atual}
-    print(context)
     return render(request, "site_design/index.html", context)
