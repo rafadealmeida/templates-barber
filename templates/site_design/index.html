@@ -103,6 +103,11 @@
     </div>
 
     <section class="haircuts">
+      {% for servico in servicos %}
+      <!-- prettier-ignore -->
+      {# incrementa o delay em passos de 100ms: 250, 350, 450... #}
+      
+      {% widthratio forloop.counter0 1 100 as step %}
       <div
         class="haircut"
         data-aos="fade-up"
