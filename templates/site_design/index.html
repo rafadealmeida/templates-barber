@@ -103,8 +103,6 @@
     </div>
 
     <section class="haircuts">
-      {% for servico in servicos %} {# incrementa o delay em passos de 100ms:
-      250, 350, 450... #} {% widthratio forloop.counter0 1 100 as step %}
       <div
         class="haircut"
         data-aos="fade-up"
@@ -122,8 +120,7 @@
         <div class="haircut-info">
           <strong>{{ servico.nome }}</strong>
 
-          {% if servico.preco %} {# Se o projeto estiver com localize pt-BR, vai
-          sair como 45,00 #} {% localize on %}
+          {% if servico.preco %} {% localize on %}
           <button>R$ {{ servico.preco }}</button>
           {% endlocalize %} {% else %}
           <button>Consultar</button>
